@@ -1,0 +1,9 @@
+.vscode
+.history
+*__pycache__
+dist
+build
+*.spec
+*.txt
+*.json
+*.idea
