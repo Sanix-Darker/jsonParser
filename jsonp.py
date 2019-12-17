@@ -21,6 +21,8 @@ try:
     else:
         with open(prs.file, "r+") as fil:
             objJson = jsonloads(fil.read())
+
+    objJson = {x.replace(' ', ''): v
+                    for x, v in objJson.items()}
     print(objJson[prs.key])
-except Exception as es:
-    print(es)
+except Exception as es:pass
